@@ -8,6 +8,7 @@ do
 	echo "Enter 2 to delete a record"
 	echo "Enter 3 to list all records"
 	echo "Enter 4 to sort records"
+	echo "Enter 5 to search a record"
 	echo "Press -1 to quit"
 	read option
 
@@ -43,7 +44,20 @@ do
 	then
 		# Sort records
 		echo "Sorting records"
-		sort emp_info.txt
+		sort emp_info.txt > emp_info_temp.txt
+		mv emp_info_temp.txt emp_info.txt
+	elif [ $option -eq 5 ]
+	then
+		# Searching for a record
+		echo "Enter id to search"
+		read idToSearch
+		result=`grep "^$idToSearch" emp_info.txt`
+		if [ -z "$result" ]
+		then
+			echo "Record not found"
+		else
+			echo $result
+		fi
 	elif [ $option -eq -1 ]
 	then
 		# Quit

@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
+#include <time.h>
 
 int main(int argc, char *args[]) {
 	if(argc != 2) {
@@ -15,11 +16,15 @@ int main(int argc, char *args[]) {
 		printf("Could not read information of file\n");
 		return -1;
 	}
-	printf("inode: %d\n", information->ino_t);
-	printf("Number of hard links: %d\n", information->nlink_t);
-	printf("uid: %d\n", information->uid_t);
-	printf("gid: %d\n", infomation->gid_t);
-	printf("size: %d\n", information->off_t);
-	printf("block size: %d\n", information->blksize_t);
-	printf("number of blocks: %d\n", (information->off_t / information->blksize_t));
-	printf("time of last access: \n"
+	printf("inode: %lu\n", information.st_ino);
+	printf("Number of hard links: %lu\n", information.st_nlink);
+	printf("uid: %d\n", information.st_uid);
+	printf("gid: %d\n", information.st_gid);
+	printf("size: %lu\n", information.st_size);
+	printf("block size: %lu\n", information.st_blksize);
+	printf("number of blocks: %lu\n", information.st_blocks);
+	printf("time of last access: %s\n", ctime(&information.st_atime));
+	printf("time of last modification: %s\n", ctime(&information.st_mtime));
+	printf("time of last change: %s\n", ctime(&information.st_ctime));
+	return 0;
+}

@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 17_b
+Author : Shrutik Mali
+Description : Write a separate program, to open the file, implement write lock, read the ticket number, 
+              increment the number and print the new ticket number then close the file.
+Date: 25 Aug 2023.
+============================================================================
+*/
+
 #include <unistd.h>
 #include <stdio.h>
 #include <fcntl.h>

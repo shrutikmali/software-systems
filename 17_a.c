@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 17_a
+Author : Shrutik Mali
+Description : Write a program to open a file, store a ticket number and exit.
+Date: 25 Aug 2023.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>

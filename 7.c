@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 7
+Author : Shrutik Mali
+Description : Write a program to copy file1 into file2 ($cp file1 file2).
+Date: 18 Aug 2023.
+============================================================================
+*/
+
 #include <unistd.h>
 #include <stdio.h>
 #include <fcntl.h>

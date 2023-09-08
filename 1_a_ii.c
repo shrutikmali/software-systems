@@ -1,8 +1,17 @@
+/*
+============================================================================
+Name : 1_a_ii
+Author : Shrutik Mali
+Description : Create symlink
+Date: 7 Sep 2023.
+============================================================================
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>
 #include <string.h>
+
 
 int main(int argc, char *args[]) {
 	if(argc != 2) {

@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 16
+Author : Shrutik Mali
+Description : Write a program to perform mandatory locking.
+		a. Implement write lock
+		b. Implement read lock
+Date: 24 Aug 2023.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>

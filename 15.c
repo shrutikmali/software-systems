@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 15
+Author : Shrutik Mali
+Description : Write a program to display the environmental variable of the user (use environ).
+Date: 24 Aug 2023.
+============================================================================
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 

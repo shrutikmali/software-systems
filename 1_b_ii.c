@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 1_b_ii
+Author : Shrutik Mali
+Description : Create hard link
+Date: 7 Sep 2023.
+============================================================================
+*/
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

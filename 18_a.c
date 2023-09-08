@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 18_a
+Author : Shrutik Mali
+Description : Write a program to perform Record locking. Implement write lock
+Date: 25 Aug 2023.
+============================================================================
+*/
+
 #include <unistd.h>
 #include <stdio.h>
 #include <fcntl.h>

@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 1_a_ii
+Author : Shrutik Mali
+Description : Create named fifo
+Date: 7 Sep 2023.
+============================================================================
+*/
+
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>

@@ -30,7 +30,7 @@ int main(int argc, char *args[]) {
 		printf("Could not write\n");
 		return -1;
 	}
-	int offset = lseek(fd, 10, SEEK_SET);
+	int offset = lseek(fd, 10, SEEK_CUR);
 	printf("Value of lseek: %d\n", offset);
 	write_res = write(fd, &buff, 10);
 	close(fd);

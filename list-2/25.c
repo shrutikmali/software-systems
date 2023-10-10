@@ -4,8 +4,8 @@
 #include <sys/msg.h>
 
 int main() {
-	key_t key = ftok(".", 0);
-	int queue = msgget(key, IPC_CREAT);
+	key_t key = ftok(".", 25);
+	int queue = msgget(key, IPC_CREAT | 0666);
 	if(queue == -1) {
 		printf("Error in making queue\n");
 		return -1;
@@ -14,7 +14,7 @@ int main() {
 	struct msqid_ds info;
 	msgctl(queue, IPC_STAT, &info);
 
-	printf("Access permissions: %u\n", info.msg_perm.mode);
+	printf("Access permissions: %o\n", info.msg_perm.mode);
 	printf("UID: %d\n", info.msg_perm.uid);
 	printf("GID: %d\n", info.msg_perm.gid);
 	printf("Time of last message send: %ld\n", info.msg_stime);

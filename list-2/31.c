@@ -4,18 +4,29 @@
 #include <sys/sem.h>
 
 int main() {
-	key_t key_binary = ftok(".", 31);
+	key_t key_binary = ftok(".", 12);
 	int binary = semget(key_binary, 1, IPC_CREAT);
 	if(binary == -1) {
 		perror("Error in creating binary semaphore: ");
 		return -1;
 	}
+
+	int res_set = semctl(binary, 0, SETVAL, 1);
+	if(res_set == -1) {
+		perror("Error setting binary semaphore: ");
+		return -1;
+	}
 	printf("Binary semaphore created\n");
 
-	key_t key_counting = ftok(".", 10);
-	int counting = semget(key_counting, 10, IPC_CREAT);
+	key_t key_counting = ftok(".", 13);
+	int counting = semget(key_counting, 1, IPC_CREAT);
 	if(counting == -1) {
 		perror("Error in creating counting semaphore: ");
+		return -1;
+	}
+	res_set = semctl(counting, 0, SETVAL, 10);
+	if(res_set == -1) {
+		perror("Error setting value of counting semaphore: ");
 		return -1;
 	}
 	printf("Couting semaphore created\n");

@@ -9,7 +9,8 @@ int main() {
 		perror("Error in creating shm: ");
 		return -1;
 	}
-
+	printf("SHM created\n");
+	getchar();
 	char *read_write = shmat(id, (void*)0, 0);
 	printf("Message to write to SHM: ");
 	scanf("%[^\n]", read_write);
@@ -26,7 +27,6 @@ int main() {
 		return -1;
 	}
 	printf("SHM detached\n");
-
 	struct shmid_ds info;
 	int rem_res = shmctl(id, IPC_RMID, &info);
 	if(rem_res == -1) {

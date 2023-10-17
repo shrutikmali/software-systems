@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 31.c
+Author : Shrutik Mali
+Description : Write a program to create a semaphore and initialize value to the semaphore.
+a. create a binary semaphore
+b. create a counting semaphore
+Date: 10 Oct 2023
+============================================================================
+*/
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/ipc.h>

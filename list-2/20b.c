@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 20b.c
+Author : Shrutik Mali
+Description : Write two programs so that both can communicate by FIFO -Use one way communication.
+Date: 9 Oct 2023
+============================================================================
+*/
+
 #include <stdio.h>
 #include <fcntl.h>
 #include <unistd.h>

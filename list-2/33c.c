@@ -1,3 +1,13 @@
+/*
+============================================================================
+Name : 33c.c
+Author : Shrutik Mali
+Description : Write a program to communicate between two machines using socket.
+Date: 10 Oct 2023
+============================================================================
+*/
+
+
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>

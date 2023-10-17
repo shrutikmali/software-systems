@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 26.c
+Author : Shrutik Mali
+Description : Write a program to send messages to the message queue. Check $ipcs -q
+Date: 10 Oct 2023
+============================================================================
+*/
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/ipc.h>

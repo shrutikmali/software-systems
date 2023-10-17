@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 15.c
+Author : Shrutik Mali
+Description : Write a simple program to send some data from parent to the child process.
+Date: 5 Sep 2023
+============================================================================
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <stdlib.h>

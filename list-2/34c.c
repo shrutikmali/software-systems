@@ -1,3 +1,14 @@
+/*
+============================================================================
+Name : 34c.c
+Author : Shrutik Mali
+Description : 34. Write a program to create a concurrent server.
+a. use fork
+b. use pthread_create
+Date: 10 Oct 2023
+============================================================================
+*/
+
 #include <stdlib.h>
 #include <fcntl.h>
 #include <unistd.h>

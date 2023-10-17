@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 21b.c
+Author : Shrutik Mali
+Description : Write two programs so that both can communicate by FIFO -Use two way communications.
+Date: 9 Oct 2023
+============================================================================
+*/
+
 #include <stdio.h>
 #include <unistd.h>
 #include <fcntl.h>

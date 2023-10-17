@@ -1,3 +1,12 @@
+/*
+============================================================================
+Name : 29.c
+Author : Shrutik Mali
+Description : Write a program to remove the message queue.
+Date: 10 Oct 2023
+============================================================================
+*/
+
 #include <stdio.h>
 #include <sys/types.h>
 #include <sys/ipc.h>
